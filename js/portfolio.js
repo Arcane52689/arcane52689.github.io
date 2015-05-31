@@ -4,14 +4,14 @@ var Portfolio = window.Portfolio = {}
 
 Portfolio.bindHandlers = function() {
   $(".links").on("click", "li", Portfolio.swapView);
-
+  setInterval(Portfolio.changeImages, 120000);
 }
 
 
 
 
 Portfolio.changeImages = function(event) {
-  var num = 1;
+  var num = Math.floor(Math.random() * 6) + 1;
   $("#backdrop").find("img").attr("src","./images/"+ num +".jpg");
 }
 

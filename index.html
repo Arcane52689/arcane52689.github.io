@@ -1,4 +1,3 @@
-<>
 
 <html>
   <head>
@@ -8,7 +7,7 @@
   </head>
   <body>
 
-    <div class="background-container" id="backdrop">
+    <div class="backdrop-container" id="backdrop">
       <img src=""/>
     </div>
 
@@ -24,7 +23,7 @@
 
 
     <header>
-      <nav "nav group">
+      <nav class="nav group">
         <label class="logo">tomjenkins.ninja</label>
         <ul class="links group">
           <li> <a href="#home">Home </a></li>
@@ -38,156 +37,158 @@
 
 
 
+    <main id="content">
 
 
 
-    <article class="selected" id="home">
+      <article class="selected" id="home">
 
-      <h1>Hello, I'm Thomas </h1>
-      <p> I am a web developer specializing in Ruby, Rails, and Javascript based in the Manhattan/Long Island area.  I am currenlty looking for an exciting new place to continue my career.  If you would like to talk to me, I can be reached at <a href="mailto:tjenkins52689@gmail.com">tjenkins52689@gmail.com</a></p>
-    </article>
-
-
-    <article class="incative" id="contact">
-      <h1>Contact Info</h1>
-      <ul>
-          <li>
-            <b>Email: </b>
-            <a href="mailto:tjenkins52689@gmail.com">tjenkins52689@gmail.com
-            </a>
-          </li>
-          <li>
-            <b> LinkedIn: </b>
-            <a href="https://www.linkedin.com/in/tjenkins52689">
-              https://www.linkedin.com/in/tjenkins52689
-            </a>
-          </li>
-
-          <li>
-            <b> Github: </b>
-            <a href="https://github.com/Arcane52689">
-              https://github.com/Arcane52689
-            </a>
-          </li>
+        <h1>Hello, I'm Thomas </h1>
+        <p> I am a web developer specializing in Ruby, Rails, and Javascript based in the Manhattan/Long Island area.  I am currenlty looking for an exciting new place to continue my career.  If you would like to talk to me, I can be reached at <a href="mailto:tjenkins52689@gmail.com">tjenkins52689@gmail.com</a></p>
+      </article>
 
 
-      </ul>
-    </article>
+      <article class="inactive" id="contact">
+        <h1>Contact Info</h1>
+        <ul>
+            <li>
+              <b>Email: </b>
+              <a href="mailto:tjenkins52689@gmail.com">tjenkins52689@gmail.com
+              </a>
+            </li>
+            <li>
+              <b> LinkedIn: </b>
+              <a href="https://www.linkedin.com/in/tjenkins52689">
+                https://www.linkedin.com/in/tjenkins52689
+              </a>
+            </li>
 
-
-
-    <article class="inactive" id="projects">
-      <h1>My Projects</h1>
-      <section class="projects-container">
-        <ul class="projects group">
-          <li>
-            <article class="project">
-              <h2><a href="classic-car-classifieds.net">Classic Car Classifieds</a>
-              <a href="https://github.com/arcane52689/Classic-Car-Classifieds">Github</a>
-              </h2>
-              <section class="description">
-                A classifieds site for cars where users can sell and look for vehicles and parts.
-                Features:
-                <ul>
-                  <li>
-                    Single page Backbone App consuming a restful Rails JSON API.
-                  </li>
-                  <li>
-                    BCrypt overrides standard Auth procedures
-                  </li>
-                  <li>
-                    Utilizes OmniAuth to allow users to log in with Twitter
-                  </li>
-                  <li>
-                    Utilizes custom made search methods to look through all vehicle and part sales
-                  </li>
-                  <li>
-                    Allows users to sort  and limit search results in real time.
-                  </li>
-                </ul>
-              </section>
-            </article>
-          </li>
-
-          <li>
-            <article class="project">
-              <h2><a href="austroids.tomjenkins.ninja">Austroids</a>
-              <a href="https://github.com/arcane52689/asteroids">Github</a>
-              </h2>
-              <section class="description">
-                An Australian twist on the classic game, Asteroids.  Users must navigate a koala around the continent while avoiding the deadly creatures.
-                Features:
-                <ul>
-                  <li>
-                    Complete javascript based game, using HTML5 canvas element as the background.
-                  </li>
-                  <li>
-                    Uses Canvas method to draw indidual images instead of standard shapes
-                  </li>
-                  <li>
-                    Uses basic trigonometry to determine direction based on polar coordinates.
-                  </li>
-                </ul>
-              </section>
-            </article>
-          </li>
-
-          <li>
-            <article class="project">
-              <h2> Chess
-              <a href="https://github.com/arcane52689/Chess">Github</a>
-              </h2>
-              <section class="description">
-                A chess game built using Ruby.
-                Features:
-                <ul>
-                  <li>
-                    Breakdown of pieces into base classes to dry code up as much as possible
-                  </li>
-                  <li>
-                    Uses the colorize gem to display the background squares in alternating colors
-                  </li>
-                  <li>
-                    Includes a simple AI for one player games.
-                  </li>
-                </ul>
-              </section>
-            </article>
-          </li>
-
+            <li>
+              <b> Github: </b>
+              <a href="https://github.com/Arcane52689">
+                https://github.com/Arcane52689
+              </a>
+            </li>
 
 
         </ul>
+      </article>
 
-        <li>
-          <article class="project">
-            <h2><a href="snake.tomjenkins.ninja">Austroids</a>
-            <a href="https://github.com/arcane52689/Snake">Github</a>
-            </h2>
-            <section class="description">
-              A throw back to the classic nokia snake.
-              Features:
-              <ul>
-                <li>
-                  Converts boards from 2D array to 1D string for easy rendering
-                </li>
-                <li>
-                  Uses Jquery to change classes.  Display is regulated almost entirely by Jquery's add/remove class feature (updating the score requires DOM insertion)
-                </li>
 
-              </ul>
-            </section>
-          </article>
-        </li>
 
-      </section>
+      <article class="inactive" id="projects">
+        <h1>My Projects</h1>
+        <section class="projects-container">
+          <ul class="projects group">
+            <li>
+              <article class="project">
+                <h2><a href="classic-car-classifieds.net">Classic Car Classifieds</a>
+                <a href="https://github.com/arcane52689/Classic-Car-Classifieds">Github</a>
+                </h2>
+                <section class="description">
+                  A classifieds site for cars where users can sell and look for vehicles and parts.
+                  Features:
+                  <ul>
+                    <li>
+                      Single page Backbone App consuming a restful Rails JSON API.
+                    </li>
+                    <li>
+                      BCrypt overrides standard Auth procedures
+                    </li>
+                    <li>
+                      Utilizes OmniAuth to allow users to log in with Twitter
+                    </li>
+                    <li>
+                      Utilizes custom made search methods to look through all vehicle and part sales
+                    </li>
+                    <li>
+                      Allows users to sort  and limit search results in real time.
+                    </li>
+                  </ul>
+                </section>
+              </article>
+            </li>
 
-    </article>
+            <li>
+              <article class="project">
+                <h2><a href="austroids.tomjenkins.ninja">Austroids</a>
+                <a href="https://github.com/arcane52689/asteroids">Github</a>
+                </h2>
+                <section class="description">
+                  An Australian twist on the classic game, Asteroids.  Users must navigate a koala around the continent while avoiding the deadly creatures.
+                  Features:
+                  <ul>
+                    <li>
+                      Complete javascript based game, using HTML5 canvas element as the background.
+                    </li>
+                    <li>
+                      Uses Canvas method to draw indidual images instead of standard shapes
+                    </li>
+                    <li>
+                      Uses basic trigonometry to determine direction based on polar coordinates.
+                    </li>
+                  </ul>
+                </section>
+              </article>
+            </li>
+
+            <li>
+              <article class="project">
+                <h2> Chess
+                <a href="https://github.com/arcane52689/Chess">Github</a>
+                </h2>
+                <section class="description">
+                  A chess game built using Ruby.
+                  Features:
+                  <ul>
+                    <li>
+                      Breakdown of pieces into base classes to dry code up as much as possible
+                    </li>
+                    <li>
+                      Uses the colorize gem to display the background squares in alternating colors
+                    </li>
+                    <li>
+                      Includes a simple AI for one player games.
+                    </li>
+                  </ul>
+                </section>
+              </article>
+            </li>
+
+
+
+          </ul>
+
+          <li>
+            <article class="project">
+              <h2><a href="snake.tomjenkins.ninja">Austroids</a>
+              <a href="https://github.com/arcane52689/Snake">Github</a>
+              </h2>
+              <section class="description">
+                A throw back to the classic nokia snake.
+                Features:
+                <ul>
+                  <li>
+                    Converts boards from 2D array to 1D string for easy rendering
+                  </li>
+                  <li>
+                    Uses Jquery to change classes.  Display is regulated almost entirely by Jquery's add/remove class feature (updating the score requires DOM insertion)
+                  </li>
+
+                </ul>
+              </section>
+            </article>
+          </li>
+
+        </section>
+
+      </article>
 
 
 <!-- Resume here? -->
 
 
 
+    </main>
   </body>
 </html>
