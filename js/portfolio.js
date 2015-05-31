@@ -4,6 +4,7 @@ var Portfolio = window.Portfolio = {}
 
 Portfolio.bindHandlers = function() {
   $(".links").on("click", "li", Portfolio.swapView);
+  Portfolio.changeImages();
   setInterval(Portfolio.changeImages, 120000);
 }
 

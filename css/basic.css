@@ -1,5 +1,5 @@
 html, body, ul, li,
-h1, h2, h3, h6, a, button, head {
+h1, h2, h3, h6, a, button, header {
   border: 0;
   margin: 0;
   padding: 0;
@@ -11,6 +11,8 @@ h1, h2, h3, h6, a, button, head {
   text-decoration: inherit;
 
   font: inherit;
+
+  text-shadow: inherit;
 }
 
 body {
@@ -50,12 +52,15 @@ img {
   right: 0;
 }
 
-
+/* Header */
 header {
-  font-size: 36px;
+  font-size: 24px;
   font-weight: 700;
 
+  background: rgba(50,50,100,.8);
+
   text-align: center;
+  color: white;
 }
 
 nav {
@@ -72,4 +77,60 @@ nav label {
 .links > li {
   float: left;
   margin-left: 15px;
+  border-left: 1px solid white;
+}
+
+.links > li > a {
+  display: block;
+  cursor: pointer;
+  padding: 5px 10px;
+}
+
+.links > li :hover {
+  background: black;
+  color: white;
+}
+
+/*Main */
+main {
+  width: 900px;
+  margin: auto;
+  background: rgba(255,255,255,.3);
+  min-height: 400px;
+}
+
+/* tabs */
+.selected {
+  width: 800px;
+  padding: 20px;
+  margin: auto;
+  text-shadow: 0 0 1px white;
+}
+
+.selected h1 {
+  text-align: center;
+  font-size: 24px;
+}
+
+.selected a {
+  color: blue;
+  text-decoration: underline;
+}
+
+
+
+/*projects */
+
+.project {
+  margin-top: 20px;
+}
+
+.project ul {
+  list-style: circle;
+  margin-left: 20px;
+}
+
+.project h2 {
+  font-size: 16px;
+  font-weight: bold;
 }
