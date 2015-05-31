@@ -68,25 +68,27 @@ nav {
 
 nav label {
   float: left;
+  margin-left: 30px;
+  margin-top: 5px;
 }
 
 .links {
   float: right;
+  border-right: 1px solid white;
 }
 
 .links > li {
   float: left;
-  margin-left: 15px;
   border-left: 1px solid white;
 }
 
 .links > li > a {
   display: block;
-  cursor: pointer;
-  padding: 5px 10px;
+  padding: 5px 20px;
 }
 
 .links > li :hover {
+  cursor: pointer;
   background: black;
   color: white;
 }
