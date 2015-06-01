@@ -31,6 +31,7 @@ ul {
 
 img {
   height: auto;
+
   display: block;
   width: 100%;
 }
@@ -41,7 +42,13 @@ img {
   display: none;
 }
 
+#close {
+  border: 1px solid black;
+  padding: 5px;
+  background: white;
+  margin: auto;
 
+}
 
 .backdrop-container {
   position: fixed;
@@ -97,7 +104,7 @@ nav label {
 main {
   width: 900px;
   margin: auto;
-  background: rgba(255,255,255,.3);
+  background: rgba(255,255,255,.5);
   min-height: 400px;
 }
 
@@ -135,4 +142,30 @@ main {
 .project h2 {
   font-size: 16px;
   font-weight: bold;
+}
+
+.container {
+  width: 100px;
+}
+
+.outer-modal {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+
+  background: rgba(200,200,200,.5):
+}
+
+.big-container {
+  height: 500px;
+  width: 800px;
+  border: 10px solid: black
+  margin: auto;
+  overflow:hidden;
+}
+
+.big-container img {
+  max-height: 95%;
 }
