@@ -62,7 +62,9 @@ img {
   top: 0;
   right: 0;
 }
-
+.backdrop-container img {
+  height: 100%;
+}
 /* Header */
 header {
   font-size: 24px;
