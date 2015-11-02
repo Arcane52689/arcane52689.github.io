@@ -235,6 +235,10 @@ header nav .item {
   width: 400px;
 }
 
+.features > li {
+  margin-top: 5px;
+}
+
 .container {
   width: 500px;
   margin: auto;
