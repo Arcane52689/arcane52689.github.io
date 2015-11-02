@@ -1,0 +1,68 @@
+<div class="section projects">
+
+
+  <section class="projects-container group">
+    <div class="projects-list-container">
+
+    <h1 class="subtitle">My Projects</h1>
+    <ul class="projects-list">
+      <li class="project-list-item "
+        ng-repeat="project in projects.projects"
+        ng-click="projects.selectProject($index)"
+        ng-class="projects.checkItemClass($index)"
+        >
+        {{ project.name }}
+
+      </li>
+
+    </ul>
+    </div>
+
+    <div class="project-display"
+      ng-show="projects.project"
+      ng-class="projects.checkDisplayClass()">
+      <h1 class="title">{{projects.project.name}}</h1>
+      <h4 class="subtitle">Links</h4>
+      <ul class="links">
+        <li ng-show="projects.project.live">
+          Live:
+          <a href="{{projects.project.live}}"
+            target="_live">
+            {{projects.project.live}}
+          </a>
+        </li>
+        <li ng-show="projects.project.github">
+          Github: <a href="{{projects.project.github}}"
+            target="_github">{{projects.project.github}}
+          </a>
+        </li>
+      </ul>
+      <h4 class="subtitle">Description</h4>
+      <section class="description">
+
+        {{projects.project.description}}
+      </section>
+
+
+      <h4 class="subtitle">Features:</h4>
+
+      <ul class=features>
+        <li ng-repeat="feature in projects.project.features">
+          {{feature}}
+        </li>
+      </ul>
+
+
+      <h4 class="subtitle"> Images</h4>
+      <figure class="container">
+        <img ng-src="{{projects.project.mainImageUrl}}" alt="" />
+      </figure>
+
+
+
+
+    </div>
+
+
+  </section>
+</div>

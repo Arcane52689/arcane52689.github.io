@@ -1,0 +1,262 @@
+h1, h2, h3, h4, h5, h6, body, main, a, label, ul, li, img, figure {
+  border: 0;
+  margin: 0;
+  padding: 0;
+  outline: 0;
+
+  background: transparent;
+  color: inherit;
+  text-align: inherit;
+  text-decoration: inherit;
+
+  font: inherit;
+
+  text-shadow: inherit;
+}
+
+ul {
+  list-style: none
+}
+
+img {
+  display: block;
+  height: auto;
+  width: 100%;
+}
+
+.group:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+header {
+  color: white;
+  background: red;
+  font-size: 24px;
+}
+header nav {
+  width: 1000px;
+  margin: auto;
+}
+
+header nav .logo {
+  float: left;
+  padding: 5px 10px;
+
+}
+
+header nav .links {
+  width: 600;
+  float: right;
+  border-right: 1px solid #eee
+}
+
+header nav .item {
+  float: left;
+}
+
+.item a {
+  display: block;
+  padding: 5px 10px;
+  border-left: 1px solid #eee;
+}
+
+.section {
+  width: 600px;
+  height: 100%;
+  margin: 20px auto;
+  padding: 10px;
+  background: rgba(200, 200, 200, .2);
+}
+
+/* Background Photo */
+
+.background-photo {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+}
+
+
+
+/* About / home */
+
+.profile {
+  border-radius: 50%;
+  width: 220px;
+
+  overflow: hidden;
+  margin: auto;
+}
+
+.profile img {
+  height: 100%
+}
+
+
+.subtitle {
+  text-align: center;
+  font-size: 18px;
+  font-weight: 700;
+
+  margin-top: 15px;
+}
+
+.title {
+  text-align: center;
+  font-size: 36px;
+  font-weight: 700;
+}
+
+
+
+
+
+
+
+/* Skills */
+
+
+.skills {
+  width: 600px;
+  margin-top: 50px;
+}
+
+.skills h3 {
+  font-size: 24px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.skill {
+  width: 75px;
+  height: 75px;
+  float: left;
+  margin: 25px 10px;
+}
+
+.skill img {
+  height: 75px;
+}
+
+.skill label {
+  width: 75px;
+  text-align: center;
+  display:block;
+  margin: auto;
+}
+
+
+
+
+/* Resume */
+
+.resume {
+  height: 600px
+}
+
+.download a {
+  display: block;
+  width: 100px;
+  padding: 5px 10px;
+  border: 2px solid black;
+  background: #149;
+  color: white;
+  text-decoration: none;
+  margin: auto;
+  margin-bottom: 10px;
+  text-align: center;
+  border-radius: 5px;
+}
+
+
+
+/* Projects */
+
+.projects {
+  width: 900px;
+
+}
+
+.projects-list-container {
+  width: 250px;
+  float: left;
+  padding: 10px;
+  margin: 10px;
+  background: rgba(220, 220, 220, .7)
+
+}
+.projects-list {
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+
+}
+.projects-list > li {
+  display: block;
+  padding: 5px 10px;
+  border-bottom: 1px solid black;
+}
+
+.projects-list > li:first-child {
+  border-top: 1px solid black;
+}
+
+.selected {
+  background: rgba(100, 100, 200, .5);
+}
+
+.project-display {
+  float: left;
+  width: 550px;
+  padding: 10px;
+  margin: 10px;
+  background: rgba(20, 240, 20, .7)
+
+}
+
+.project-display a {
+  color: blue;
+
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+.features {
+  list-style-type: disc;
+  margin: auto;
+  width: 400px;
+}
+
+.container {
+  width: 500px;
+  margin: auto;
+}
+
+.project-display {
+  transition: all 1s ease;
+}
+
+.cars {
+  background: rgba(100,200,100,.5);
+}
+.austroids {
+  background: rgba(50, 50, 200, .5);
+}
+.chess {
+  background: rgba(200,200,200, .5);
+}
+.snake {
+  background: rgba(50, 50, 50, .5);
+}
+
+.models {
+  background: rgba(50, 100, 150, .5);
+}
