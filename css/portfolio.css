@@ -32,12 +32,14 @@ img {
 
 body {
   font-family: 'Lato', sans-serif;
+  min-width: 900px%
 }
 
 header {
   color: white;
-  background: red;
   font-size: 24px;
+  background: rgba(250,30, 30, .9);
+  min-width: 1000px;
 }
 header nav {
   width: 1000px;
@@ -71,7 +73,7 @@ header nav .item {
   height: 100%;
   margin: 20px auto;
   padding: 10px;
-  background: rgba(200, 200, 200, .2);
+
 }
 
 /* Background Photo */
@@ -83,6 +85,10 @@ header nav .item {
   left: 0;
   right: 0;
   z-index: -1;
+}
+.background-photo > img{
+  height: 100%;
+  width: 100%;
 }
 
 
@@ -218,7 +224,7 @@ header nav .item {
   width: 550px;
   padding: 10px;
   margin: 10px;
-  background: rgba(20, 240, 20, .7)
+  overflow: hidden;
 
 }
 
@@ -249,7 +255,7 @@ header nav .item {
 }
 
 .cars {
-  background: rgba(100,200,100,.5);
+  background: rgba(0,120,0,.5);
 }
 .austroids {
   background: rgba(50, 50, 200, .5);
@@ -262,5 +268,11 @@ header nav .item {
 }
 
 .models {
-  background: rgba(50, 100, 150, .5);
+  background: rgb(150, 250, 100)
+}
+.switching {
+  width: 1px;
+  padding: 0;
+  
+
 }

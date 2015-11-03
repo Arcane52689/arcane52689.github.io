@@ -87,13 +87,26 @@ portfolioControllers.controller('ProjectsCtrl', function($scope) {
     "snake",
     "models"
   ]
-  this.project = this.projects[0];
 
+  this.project = this.projects[0];
+  this.selectedClass= this.classes[0];
+
+  this.animate = function(index) {
+    var display = angular.element(document.getElementById("display"));
+    display.addClass('switching').one('transitionend', function(event) {
+
+      event.preventDefault();
+      display.removeClass('switching');
+      this.selectProject(index);
+    }.bind(this))
+  }
 
 
   this.selectProject = function(index) {
+
     this.project = this.projects[index];
     this.selectedClass = this.classes[index];
+    $scope.$apply();
   };
 
   this.checkItemClass = function(index) {
