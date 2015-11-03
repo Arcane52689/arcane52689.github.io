@@ -76,6 +76,16 @@ header nav .item {
 
 }
 
+.about, .contact {
+  background: rgba(200, 200, 150, .7)
+
+}
+
+.email, .phone {
+  color: blue;
+  text-decoration: underline;
+}
+
 /* Background Photo */
 
 .background-photo {
@@ -134,13 +144,10 @@ header nav .item {
 .skills {
   width: 600px;
   margin-top: 50px;
+
+  background: rgba(200, 200, 200, .5);
 }
 
-.skills h3 {
-  font-size: 24px;
-  font-weight: 400;
-  text-align: center;
-}
 
 .skill {
   width: 75px;
@@ -251,7 +258,7 @@ header nav .item {
 }
 
 .project-display {
-  transition: all 1s ease;
+  transition: all 0.5s ease;
 }
 
 .cars {
@@ -273,6 +280,14 @@ header nav .item {
 .switching {
   width: 1px;
   padding: 0;
-  
+}
 
+
+.contact-methods {
+  width: 350px;
+  margin: auto;
+}
+
+.contact-methods > li {
+  margin-top: 5px;
 }
