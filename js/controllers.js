@@ -71,10 +71,11 @@ portfolioControllers.controller('ProjectsCtrl', function($scope) {
       'description': 'A lightweight model and collection system created to emulate some of the functionality found in Backbone.js',
       'features': [
         'Uses prototypical inhertance instead of the Backbone/Underscore extend method',
-        'BaseModel uses save to create or update the database based on the isNew function',
-        'Models use fetch to grab json from the server and convert it into a model',
+        'Both BaseCollection and BaseModel feature .on() and .one(), which take an event and a callback, and then call the callback the next time .trigger(event) is called',
+        'BaseModel uses fetch to interact with API and convert result into the attributes object',
         'BaseCollection includes a number of ruby-like methods, including map, any, none, and each',
-        'BaseCollection features a where method that takes a callback and returns a duplicate collection containing only the items for which the callback returns true. Similar to array.select in ruby'
+        'BaseCollection features a where method that takes a callback and returns a duplicate collection containing only the items for which the callback returns true. Similar to array.select in ruby',
+        'Both BaseCollection and BaseModel inherit'
       ],
       'github': 'https://github.com/Arcane52689/ArcaneModels-Angular',
       'mainImageUrl': './images/projects/model_factory.png'
