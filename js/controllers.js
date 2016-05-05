@@ -74,8 +74,7 @@ portfolioControllers.controller('ProjectsCtrl', function($scope) {
         'Both BaseCollection and BaseModel feature .on() and .one(), which take an event and a callback, and then call the callback the next time .trigger(event) is called',
         'BaseModel uses fetch to interact with API and convert result into the attributes object',
         'BaseCollection includes a number of ruby-like methods, including map, any, none, and each',
-        'BaseCollection features a where method that takes a callback and returns a duplicate collection containing only the items for which the callback returns true. Similar to array.select in ruby',
-        'Both BaseCollection and BaseModel inherit'
+        'BaseCollection features a where method that takes a callback and returns a duplicate collection containing only the items for which the callback returns true. Similar to array.select in ruby'
       ],
       'github': 'https://github.com/Arcane52689/ArcaneModels-Angular',
       'mainImageUrl': './images/projects/model_factory.png'
