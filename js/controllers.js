@@ -15,22 +15,7 @@ portfolioControllers.controller('SkillsCtrl', function() {
 
 
 portfolioControllers.controller('ProjectsCtrl', function($scope) {
-  this.projects = [{
-    'name': "Classic Car Classifieds",
-    'description': 'A classifieds site for cars where users can sell and look for vehicles and parts.',
-    'features': [
-      'Single page Backbone App consuming a restful Rails JSON API.',
-      'BCrypt overrides standard Auth procedures',
-      'Utilizes OmniAuth to allow users to log in with Twitter',
-      'Utilizes custom made search methods to look through all vehicle and part sales',
-      'Allows users to sort, limit, and update search results',
-      'Allows users to set up notifications when new requests matching their preferences are created'
-    ],
-    'mainImageUrl': './images/projects/classic-car.png',
-    'github': 'https://github.com/arcane52689/Classic-Car-Classifieds',
-    'live' : 'http://classic-car-classifieds.net'
-  },
-
+  this.projects = [
     {
       'name': "Austroids",
       'description': 'An Australian twist on the classic game, Asteroids.  Users must navigate a koala around the continent while avoiding the deadly creatures.',
